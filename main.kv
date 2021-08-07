@@ -1,0 +1,24 @@
+<MainWidget>:
+    orientation: 'vertical'
+    padding: 20
+    spacing: 20
+
+    Image:
+        source: 'hello.png'
+
+    TextInput:
+        multiline: False
+        size_hint: (.5, None)
+        pos_hint:{"center_x":0.5, "top":1}
+        height: 50
+        font_size: 30
+
+    Label:
+        markup: True
+        text: '[size=34]Напишите как вас зовут[/color]'
+
+    Button:
+        markup: True
+        text: '[size=34]Поздороваться[/color]'
+        size_hint: (.5, None)
+        pos_hint:{"center_x":0.5, "top":1}
