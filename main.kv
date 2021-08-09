@@ -3,10 +3,14 @@
     padding: 20
     spacing: 20
 
+    name_input: name
+    hello_label: hello
+
     Image:
         source: 'hello.png'
 
     TextInput:
+        id: name
         multiline: False
         size_hint: (.5, None)
         pos_hint:{"center_x":0.5, "top":1}
@@ -14,11 +18,14 @@
         font_size: 30
 
     Label:
-        markup: True
-        text: '[size=34]Напишите как вас зовут[/color]'
+        id: hello
+        font_size: 30
+        text: 'Напишите как вас зовут'
 
     Button:
-        markup: True
-        text: '[size=34]Поздороваться[/color]'
+        font_size: 30
+        text: 'Поздороваться'
         size_hint: (.5, None)
         pos_hint:{"center_x":0.5, "top":1}
+
+        on_press: root.say_hello()
